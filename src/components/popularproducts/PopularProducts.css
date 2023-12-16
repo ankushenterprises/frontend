@@ -1,0 +1,81 @@
+.popular-products{
+    background-image: url('../../assets/popularbackground.svg');
+    object-fit: cover;
+    /* height: 100vh; */
+}
+.popular-products h1{
+    padding: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.popular-products span{
+    color: #ED1D2B;
+}
+.popular-products div{
+    /* height: 100px;
+    width: 100px;
+    background-color: black; */
+}
+.slick-slider button{
+    width: 200px;
+    /* background-color: black; */
+}
+.slick-slider{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-card{
+    /* height: 200px;
+    width:20px; */
+    /* background-color: gray; */
+    /* margin: 5px 5px; */
+}
+.slick-card h1{
+    margin-left: 10px;
+}
+.slick-inner-card{
+    margin: 20px;
+    border-radius: 14px;
+    
+}
+.slick-card img{
+    height: 220px;
+    width: 220px;
+    border-radius: 14px;
+
+
+}
+.slick-slider button{
+    background-color: #ED1D2B;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+.slick-slider button:hover{
+    background-color: #bb141f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+.red-bg{
+    position: relative;
+    background-color: red;
+    height: 80px;
+    width: 220px;
+    bottom: 80px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    opacity: 0.7;
+    background: linear-gradient(to bottom, rgba(255, 200, 0, 0), rgba(255, 0, 0, 1));
+
+}
+.slick-dots{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    
+}
