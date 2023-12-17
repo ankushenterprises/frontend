@@ -76,11 +76,14 @@ export default function Navbar() {
                   </a>
                 </li>
               </Link>
-              <li className="nav-item" style={{ marginLeft: "16px" }}>
-                <a className="nav-link" href="#">
-                  Products
-                </a>
-              </li>
+              <Link to="/products" style={{ textDecoration: "none" }}>
+                <li className="nav-item" style={{ marginLeft: "16px" }}>
+                  <a className="nav-link" href="#">
+                    Products
+                  </a>
+                </li>
+              </Link>
+
               <li className="nav-item" style={{ marginLeft: "16px" }}>
                 <a className="nav-link" href="#">
                   Industries

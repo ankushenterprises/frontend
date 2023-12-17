@@ -64,13 +64,47 @@ font-weight: 500;
     width: 100%;
     height: fit-content;
   }
-  
+  .images-grid-wrappper{
+width: 70vw;
+display: flex;
+  }
+  .images-grid-wrappper img{
+    width: 100%;
+    margin: 5px;
+  }
+.column1{
+  flex: 3;
+  margin: 5px;
+}
+.column2{
+  flex: 2;
+  margin: 5px;
+
+}
+.column3{
+  flex: 1.5;
+  margin: 5px;
+
+}
+
+.column2 img{
+  height: 48%;
+}
+.column3 img{
+  height: 100%;
+}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
+    .images-grid-wrappper{
+      width: 90vw;
+      display: flex;
+      flex-wrap: wrap;
+        }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -79,5 +113,12 @@ font-weight: 500;
       flex: 100%;
       max-width: 100%;
     }
+    
+  }
+  @media screen and (max-width: 576px) {
+    .images-grid-wrappper{
+      
+      flex-direction: column;
+        }
     
   }

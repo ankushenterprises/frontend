@@ -5,6 +5,7 @@ import AboutUs from "./pages/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import ScrollTop from "./ScrollTop";
+import Products from "./pages/Products";
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </BrowserRouter>
   );
