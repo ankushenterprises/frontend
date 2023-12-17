@@ -34,7 +34,9 @@ export default function ProductList() {
             <img src={item} alt="" />
             <p>Liquid Unsaturated Polyester Resin</p>
             <div className="buttons">
-              <button className="btn-1">View Product</button>
+              <Link to="/product" style={{ textDecoration: "none" }}>
+                <button className="btn-1">View Product</button>
+              </Link>
               <Link to="/contact-us" style={{ textDecoration: "none" }}>
                 <button className="btn-2">Enquiry Now</button>
               </Link>

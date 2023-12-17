@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import Products from "./pages/Products";
 import IndustriesPage from "./pages/IndustriesPage";
+import ProductDetails from "./pages/ProductDetails";
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/products" element={<Products />} />
         <Route path="/industries" element={<IndustriesPage />} />
+        <Route path="/product" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   );
