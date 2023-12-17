@@ -75,3 +75,9 @@
         color: #002603;
     }
 }
+@media screen and (max-width:425px) {
+    
+    .text-content-heading{
+        margin-left: -30px;
+    }
+}

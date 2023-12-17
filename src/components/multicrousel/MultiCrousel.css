@@ -10,6 +10,7 @@ justify-content: center;
 }
 .react-multiple-carousel__arrow{
     background-color: #ED1D2B;
+    z-index: 500;
 }
 .react-multiple-carousel__arrow:hover{
     background-color: #b20813;

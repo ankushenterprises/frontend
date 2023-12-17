@@ -1,8 +1,8 @@
 import React from "react";
 import "./Industries.css";
 import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import GalleryTest from "../gallery/GalleryTest";
+import { Link } from "react-router-dom";
+
 export default function Industries() {
   const [index, setIndex] = useState(0);
 
@@ -47,7 +47,9 @@ export default function Industries() {
           />
         </div>
       </div>
-      <button className="read-more">Read more</button>
+      <Link to="/industries">
+        <button className="read-more">Read more</button>
+      </Link>
     </div>
   );
 }

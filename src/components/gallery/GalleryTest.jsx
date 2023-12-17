@@ -1,26 +1,36 @@
 import React from "react";
-import Masonry from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Gallery } from "react-grid-gallery";
 import imageArray from "../../data";
+import "./GalleryTest.css";
 export default function GalleryTest() {
   const images = [
-    "https://media.discordapp.net/attachments/1134172030699323465/1185166886737035345/image.png?ex=658e9fad&is=657c2aad&hm=2b54b77efae3c8b9d4416e52752b1e453d8f9dd5b928c8666960da8a3b294c7c&=&format=webp&quality=lossless&width=1596&height=1056",
-    "https://media.discordapp.net/attachments/1134172030699323465/1185167101556703232/image.png?ex=658e9fe0&is=657c2ae0&hm=6c975dbd597a4428943c5356342ac9a3f383f51ba0e43f53dccc6bbca0830335&=&format=webp&quality=lossless&width=1860&height=736",
-    "https://media.discordapp.net/attachments/1134172030699323465/1185167204870795285/image.png?ex=658e9ff8&is=657c2af8&hm=f5320ff1f4efbfa1eb527599132ed8daf8b93e35933e788f920abe174b85cb24&=&format=webp&quality=lossless&width=1860&height=764",
-    "https://media.discordapp.net/attachments/1134172030699323465/1185167296084332614/image.png?ex=658ea00e&is=657c2b0e&hm=c1f6c1c1e3789e541cb32fee318b7f405cfc04053aebc6ddbccebdf98e0e1b90&=&format=webp&quality=lossless&width=840&height=1054",
+    "https://images.unsplash.com/photo-1682687220640-9d3b11ca30e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1679991890467-3decb348b0a1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1669385169163-946584657986?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MXx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1702136999448-a9337bb19cbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1700684677600-e41b44847d18?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+    "https://images.unsplash.com/photo-1682687982185-531d09ec56fc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8",
+    "https://images.unsplash.com/photo-1682687220923-c58b9a4592ae?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1702573849838-0f66f3731fdf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1682686578707-140b042e8f19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1669833450296-1c9948e72f87?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Nnx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1702350310771-65ea21568baa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4M3x8fGVufDB8fHx8fA%3D%3D",
   ];
 
   return (
     <>
-      <Masonry columnsCount={3} gutter="10px" style={{ maxWidth: "00px" }}>
-        {images.map((image, i) => (
-          <img
-            key={i}
-            src={image}
-            style={{ width: "100%", display: "block" }}
-          />
-        ))}
-      </Masonry>
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+        <Masonry columnsCount={3} gutter="10px" className="gallery-wrapper">
+          {images.map((image, i) => (
+            <img
+              key={i}
+              src={image}
+              style={{ width: "100%", display: "block", borderRadius: "10px" }}
+            />
+          ))}
+        </Masonry>
+      </ResponsiveMasonry>
     </>
   );
 }

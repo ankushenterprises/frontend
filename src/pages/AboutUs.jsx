@@ -14,7 +14,7 @@ export default function AboutUs() {
     <>
       <Navbar />
       <AboutUsFirst />
-      <div className="why-wrapper" style={{ height: "100vh" }}>
+      <div className="why-wrapper about-us-bg" style={{ height: "100vh" }}>
         <div className="why-3">
           <div className="why-1">
             <img

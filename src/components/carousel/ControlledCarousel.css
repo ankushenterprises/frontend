@@ -93,3 +93,10 @@ border-radius: 54px;
     }
     
 }
+@media screen and (max-width:425px) {
+    .carousel-text-content-1{
+        margin-left: 13%;
+        margin-top: 10%;
+        
+    }
+}

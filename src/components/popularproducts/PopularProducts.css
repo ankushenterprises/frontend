@@ -1,7 +1,7 @@
 .popular-products{
     background-image: url('../../assets/popularbackground.svg');
     object-fit: cover;
-    /* height: 100vh; */
+    padding-bottom: 50px;
 }
 .popular-products h1{
     padding: 25px;
@@ -11,28 +11,16 @@
 .popular-products span{
     color: #ED1D2B;
 }
-.popular-products div{
-    /* height: 100px;
-    width: 100px;
-    background-color: black; */
-}
-.slick-slider button{
-    width: 200px;
-    /* background-color: black; */
-}
+
+
 .slick-slider{
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
 }
 
-.slick-card{
-    /* height: 200px;
-    width:20px; */
-    /* background-color: gray; */
-    /* margin: 5px 5px; */
-}
-.slick-card h1{
+
+.slick-card01 h1{
     margin-left: 10px;
 }
 .slick-inner-card{
@@ -40,27 +28,15 @@
     border-radius: 14px;
     
 }
-.slick-card img{
+.slick-card01 img{
     height: 220px;
     width: 220px;
     border-radius: 14px;
 
 
 }
-.slick-slider button{
-    background-color: #ED1D2B;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    color: white;
-}
-.slick-slider button:hover{
-    background-color: #bb141f;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    color: white;
-}
+
+
 .red-bg{
     position: relative;
     background-color: red;
@@ -73,9 +49,66 @@
     background: linear-gradient(to bottom, rgba(255, 200, 0, 0), rgba(255, 0, 0, 1));
 
 }
-.slick-dots{
-    display: none;
+.slick-card-container{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
 }
-@media screen and (max-width:576px) {
+.slick-card01{
+margin-bottom: -80px;
+}
+@media screen and (max-width:768px) {
+    .slick-card-container{
+        width: 95vw;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    .slick-card-container{
+        width: 100vw;
+    }
+    .slick-card01 img{
+        height: 170px;
+        width: 170px;
+        border-radius: 14px;
+    
+    
+    }
+    .red-bg{
+        
+       
+        width: 170px;
+       
+    
+    }
+    
+}
+@media screen and (max-width:420px) {
+    .slick-card01 img{
+        height: 150px;
+        width: 150px;
+        border-radius: 14px;
+    
+    
+    }
+    .red-bg{
+        width: 150px;
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .slick-card01 img{
+        height: 130px;
+        width: 130px;
+        border-radius: 14px;
+    
+    
+    }
+    .red-bg{
+        width: 130px;
+    }
     
 }

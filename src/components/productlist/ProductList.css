@@ -108,3 +108,9 @@ color: black;
 .next >a{
     
 }
+@media screen and (max-width:425px) {
+    .product-list-wrapper > h1{
+        font-size: 35px;
+    
+    }
+}

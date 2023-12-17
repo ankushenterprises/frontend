@@ -139,5 +139,8 @@ height: 20%;
     #message{
         height: 70px;
     }
+    .contact-map{
+        height: 220px;
+    }
     
 }
